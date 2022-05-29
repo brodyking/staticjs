@@ -1,6 +1,6 @@
 // All configuration stuff
 configPageTitle = "Poopy Balls"
 
-configSave();
+pageAdd("index","index.js")
 
-pageEdit("asdf");
+configSave();
