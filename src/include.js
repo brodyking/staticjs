@@ -3,10 +3,10 @@
 // Function that is going to be used in this doc
 function include(url) {
     var includeJSVar = document.createElement('script');
-    includeJSVar.setAttribute('src',url);
+    includeJSVar.setAttribute('src','src/' + url);
     document.head.appendChild(includeJSVar);
 }
 
 // Including all js files
 
-include("../src/pages.js")
+include("pages.js")
