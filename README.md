@@ -52,21 +52,60 @@ You dont need anything to test it on your computer, but it is recommended you ho
 
 <div id="docs"></div>
 
-### Docs
+## Documentation
+
+This section of the README is all the documentation that is provided for SJS.
+
+### How it works
+
+When  the `index.html` page is opened, the file `app/pages/index.js` is also run.
+This file tells the computer what template and what content should be displayed. 
+
+#### Pages and Layouts
+Every page must have a layout provided. A layout is the stuff displayed around the content, like a navigation bar and a footer.
+Each layout must have a div with a id of `content`.
+
+All pages live in the `app/pages` directory and all layouts live in the `app/layouts`.
+
+To goto a page, type it in after a `#`. Here is a example: `www.example.com/index.html#about`
+When you have any # info in the URL, the site tries to find a page assosiated to it.
+
+#### Configuration
+All website configuration happens in `app/config.js`.
+Here are some variables you should set
+
+`configPageTitle` title at the top of the tab <br>
+`configPageDescription` seo page description <br>
+`configPageKeywords` seo page keywords <br>
+`configPageAuthor` seo page author <br>
+
+#### Functions
+This framework come included with some that you should familiarize yourself with.
+
+`dom(id,condition,content)` allows for easier dom modification <br>
+`include(url)` import other js documents <br>
+`includeCSS(url)` import other css documents <br>
+`layoutAdd(title,url)` import new layouts <br>
+`layoutSet(content)` set the content of a layout (put this in the layout file) <br>
+`pageAdd(title,url)` import new pages <br>
+`pageEdit(layout,content)` set the content of a page (put this in the page file) <br>
+`pageLoad(title)` (avoid using this) load pages. <br>
+`pluginAdd(title,url)` (avoid using this) import new plugins <br>
+`pluginRun(title)` (avoid using this) start plugins <br>
+`configSave()` required for config.js to work, makes it all take effect <br>
+`snippetAdd(title,url)` import new snippets <br>
+`snippetSet(content)` set the content of a snippet (put this in the snippet file) <br>
+`snippetGrab()` (avoid using this) search for snippets when page is run.  <br>
+
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [x] Importing CSS
+- [x] Page title in tab
+- [ ] Improved SEO
+- [ ] Better link support
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,10 +114,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Contributing to this project would be very helpful as I am not very good at programming and you could probably figure out a way to do everything 10x easier and faster.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -93,7 +129,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,9 +138,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[Brody King](https://bkjs.us) - bk.2k@hotmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+[https://github.com/your_username/repo_name](https://github.com/brodyking/staticjs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,33 +149,9 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Here are some tools I used to create this. If you make a future contribution I will add you to this list if you dont do it yourself.
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
+* [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
