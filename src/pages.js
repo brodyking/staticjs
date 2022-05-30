@@ -10,13 +10,20 @@ function pageAdd(title,url) {
 }
 
 // Page Contents
-function pageEdit(content) {
+function pageEdit(layout,content) {
 	var script = document.currentScript;
 	var fullUrl = script.src;
 	var title = fullUrl.slice(fullUrl.lastIndexOf('/') + 1,Infinity);
+	
+	include("../app/layouts/" + layout + ".js");
 
-	dom("body","add",content)
-	snippetGrab();
+	function delay(time) {
+		return new Promise(resolve => setTimeout(resolve, time));
+	  }
+	  
+	  delay(300).then(() => dom("content","set",content));
+	  delay(300).then(() => snippetGrab());
+	  dom("pageTitle","set",configPageTitle + " - " + title.slice(0,title.length -3)); 
 } 
 
 // Page Loader
@@ -28,4 +35,13 @@ function pageLoad(title) {
 		eval(data);
 	}) */
 	include(pageList[title]);
+}
+
+// Load pages based on the hash in the top
+if(window.location.hash) {
+	var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+	include("../app/pages/" + hash + ".js");
+	// hash found
+} else {
+	include("../app/pages/index.js");
 }

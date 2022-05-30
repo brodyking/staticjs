@@ -28,15 +28,28 @@ the github repo.
 // Page title (displayed at the top of the tab)
 configPageTitle = "My StaticJS Website"
 
+// Page description
+configPageDescription = "A tutorial website showing off how to use StaticJS"
+
+// Page keywords (used for seo)
+configPageKeywords = "HTML,CSS,JS,StaticJS"
+
+// Page author
+configPageAuthor = "Brody King"
+
+// adding our layout
+layoutAdd("basic","basic.js")
+
 // Default snippet (look in snippets/nav.js)
 snippetAdd("nav","nav.js")
 
 // Default page (look in pages/index.js)
 pageAdd("index","index.js")
-// The reason it is being loaded is because it is the first page we want the user to see
-pageLoad("index")
+pageAdd("quickstart","quickstart.js")
 
 
+
+includeCSS("basic.css")
 
 // This is required to save the changes. DO NOT DELETE THIS!
 configSave();
