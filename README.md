@@ -50,7 +50,8 @@ git clone https://github.com/brodyking/staticjs.git
 
 You dont need anything to test it on your computer, but it is recommended you host your site on a NGINX or APACHE server.
 
-<div id="#docs"></div>
+<div id="docs"></div>
+
 ### Docs
 
 
