@@ -129,7 +129,7 @@ Contributing to this project would be very helpful as I am not very good at prog
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License.
+Distributed under the Apache License 2.0
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
