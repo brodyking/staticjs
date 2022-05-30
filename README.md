@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![SJS Screen Shot][https://i.ibb.co/c3c8tC8/editing.png]]([https://example.com](https://github.com/brodyking/staticjs)
+<img src='https://i.ibb.co/c3c8tC8/editing.png' style='width: 100%;'>
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
