@@ -6,7 +6,7 @@
     <img src="https://i.ibb.co/Bf0z50H/logo.png" alt="Logo" height="120">
   </a>
 
-  <h3 align="center">StaticJS</h3>
+  <h3 align="center" style="margin: 0px;">StaticJS</h3>
 
   <p align="center">
     A quick and easy web framework that dosent require a runtime
