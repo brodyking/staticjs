@@ -14,7 +14,7 @@
     <a href="#docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://brodyking.github.io/staticjs/">View Demo</a>
     ·
     <a href="https://github.com/brodyking/staticjs/issues">Report Bug</a>
     ·
