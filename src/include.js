@@ -10,6 +10,7 @@ function include(url) {
 // Including all js files
 
 include("dom.js")
+include("snippets.js")
 include("pages.js")
 include("settings.js")
 include("../app/config.js");

@@ -1,0 +1,1 @@
+snippetSet("This is a basic template");

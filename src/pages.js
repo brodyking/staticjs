@@ -16,11 +16,13 @@ function pageEdit(content) {
 	var title = fullUrl.slice(fullUrl.lastIndexOf('/') + 1,Infinity);
 
 	dom("body","add",content)
+	snippetGrab();
 } 
 
 // Page Loader
 function pageLoad(title) {
-/*	fetch(pageList[title])
+	// Old Method of using fetch
+	/*fetch(pageList[title])
 	  .then(response => response.text())
 	  .then((data) => {
 		eval(data);
