@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/brodyking/staticjs">
-    <img src="https://i.ibb.co/02hR2sS/logo.png" alt="Logo" height="120">
+    <img src="https://i.ibb.co/02hR2sS/logo.png" alt="Logo" height="100">
   </a>
 
   <h3 align="center" style="margin: 0px;">StaticJS</h3>
