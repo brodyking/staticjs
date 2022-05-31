@@ -26,10 +26,10 @@ the github repo.
 
 
 // Page title (displayed at the top of the tab)
-configPageTitle = "My StaticJS Website"
+configPageTitle = "Brodys Blog"
 
 // Page description
-configPageDescription = "A tutorial website showing off how to use StaticJS"
+configPageDescription = "A personal blog of mine!!"
 
 // Page keywords (used for seo)
 configPageKeywords = "HTML,CSS,JS,StaticJS"
@@ -37,19 +37,20 @@ configPageKeywords = "HTML,CSS,JS,StaticJS"
 // Page author
 configPageAuthor = "Brody King"
 
-// adding our layout
-layoutAdd("basic","basic.js")
+layoutAdd("default","default.js")
 
-// Default snippet (look in snippets/nav.js)
-snippetAdd("nav","nav.js")
+pageAdd("About","index.js")
 
-// Default page (look in pages/index.js)
-pageAdd("index","index.js")
-pageAdd("quickstart","quickstart.js")
+pageAdd("Pictures","pictures.js")
+
+pageAdd("Contact","contact.js")
 
 
+includeCSS("default.css")
 
-includeCSS("basic.css")
+pluginAdd("font","font.js")
 
 // This is required to save the changes. DO NOT DELETE THIS!
 configSave();
+
+pluginRun("font")
