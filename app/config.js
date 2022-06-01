@@ -26,13 +26,13 @@ the github repo.
 
 
 // Page title (displayed at the top of the tab)
-configPageTitle = "My StaticJS Website"
+configPageTitle = "Basic Bootstrap Layout"
 
 // Page description
-configPageDescription = "A tutorial website showing off how to use StaticJS"
+configPageDescription = "A website showing you howto use bootstrap on sjs."
 
 // Page keywords (used for seo)
-configPageKeywords = "HTML,CSS,JS,StaticJS"
+configPageKeywords = "HTML,CSS,JS,StaticJS,Bootstrap,Tutorial"
 
 // Page author
 configPageAuthor = "Brody King"
@@ -47,9 +47,16 @@ snippetAdd("nav","nav.js")
 pageAdd("index","index.js")
 pageAdd("quickstart","quickstart.js")
 
+// Include bootstrap plugin
+pluginAdd("bootstrap","bootstrap.js")
 
+// Include favicon plugin
+pluginAdd("favicon","favicon.js")
 
 includeCSS("basic.css")
 
 // This is required to save the changes. DO NOT DELETE THIS!
 configSave();
+
+pluginRun("bootstrap")
+pluginRun("favicon")
