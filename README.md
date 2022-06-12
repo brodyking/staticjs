@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src='https://i.ibb.co/c3c8tC8/editing.png' style='width: 100%;'>
+<img src='https://bkjs.us/projects/staticjs/editing.png' style='width: 100%;'>
 
 I had a problem, I wanted to create a simple website that would only have a few pages and that would also reuse some components.
 Simple enough right? Wrong. My project quickly grew unorganized and a pain to manage.
